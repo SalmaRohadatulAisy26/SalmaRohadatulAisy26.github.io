@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Matematika: Persamaan Garis Lurus</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Boxicons CDN Link -->
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="sidebar">
+			<div class="logo-details">
+				<a href="#">
+				<i class='bx bxs-home-alt-2'></i>
+				<span class="logo_name link_name">Home</span>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="#pendahuluan">
+						<i class='bx bx-grid-alt'></i>
+						<span class="link_name">Pendahuluan</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#pendahuluan">Pendahuluan</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="icon-link">
+					<a href="#garislurus">
+						<i class="bx bxs-collection"></i>
+						<span class="link_name">Garis Lurus</span>
+					</a>
+					<i class="bx bxs-chevron-down arrow"></i>
+					</div>
+					<ul class="sub-menu">
+						<li><a class="link_name" href="#garislurus">Garis Lurus</a></li>
+						<li><a href="#pengertian">Pengertian</a></li>
+						<li><a href="#bentuk-umum">Bentuk Umum</a></li>
+						<li><a href="#menggambar">Menggambar pada Cartesius</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="icon-link">
+					<a href="#gradien">
+						<i class='bx bx-book-alt'></i>
+						<span class="link_name">Gradien Garis</span>
+					</a>
+					<i class="bx bxs-chevron-down arrow"></i>
+					</div>
+					<ul class="sub-menu">
+						<li><a class="link_name" href="#gradien">Gradien Garis</a></li>
+						<li><a href="#pengertian-G">Pengertian</a></li>
+						<li><a href="#melaluititik">Titik Pusat & Suatu Titik</a></li>
+						<li><a href="#duatitik">Dua Titik</a></li>
+						<li><a href="#sejajar">Saling Sejajar</a></li>
+						<li><a href="#tegaklurus">Saling Tegak Lurus</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="icon-link">
+					<a href="#persamaan">
+						<i class='bx bx-pie-chart-alt-2'></i>
+						<span class="link_name">Menentukan Persamaan</span>
+					</a>
+					<i class="bx bxs-chevron-down arrow"></i>
+					</div>
+					<ul class="sub-menu">
+						<li><a class="link_name" href="#persamaan">Menentukan Persamaan</a></li>
+						<li><a href="#persamaan1">Gradien & Titik</a></li>
+						<li><a href="#persamaan2">Dua Titik</a></li>
+						<li><a href="#persamaan4">Titik (x<sub>1</sub>, y<sub>1</sub>) & Sejajar</a></li>
+						<li><a href="#persamaan5">Titik (x<sub>1</sub>, y<sub>1</sub>) & Tegak lurus</a></li>
+						<li><a href="#persamaan3">Jarak</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#aplikasi">
+						<i class='bx bx-notepad'></i>
+						<span class="link_name">Aplikasi</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#aplikasi">Aplikasi</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#latihan">
+						<i class='bx bx-notepad'></i>
+						<span class="link_name">Latihan</span>
+					</a>
+					<ul class="sub-menu blank">
+						<li><a class="link_name" href="#latihan">Latihan</a></li>
+					</ul>
+				</li>
+				<li>
+			<div class="profile-details">
+				<div class="profile-content">
+					<img src="image/Picture5.jpg" alt="profile">
+				</div>
+				<div class="name-job">
+					<div class="profile_name">Salma Rohadatul A</div>
+					<div class="job">Mahasiswi Pend. MTK</div>
+				</div>
+				<i class='bx bx-log-out'></i>
+			</div>
+		</li>
+	</ul>
+		</div>
+		<section class="home-section">
+			<div class="home-content">
+				<i class='bx bx-menu'></i>
+				<span class="text">Persamaan Garis Lurus</span>
+			</div>
+			<div class="container">
+				<h3>Sekilas</h3>
+				<p>Kemiringan atau gradien dan persamaan garis lurus dipergunakan baik dalam sejarah maupun sekarang. Kemiringan menentukan posisi suatu garis terhadap koordinat X dan koordinat Y, sedangkan persamaan garis lurus terjadi bila ada dua titik atau koordinat yang berkaitan, jika hanya satu titik tidak dapat dikatakan suatu persamaan garis lurus. Sejarah mengatakan bahwa rumus dasar kemiringan ialah 𝑦 = 𝑚𝑥 + 𝑏, sedangkan rumus kemiringan atau gradien, yaitu m = <img src="https://latex.codecogs.com/gif.latex?\frac{y_{2}-y_{1}}{x_{2}-x_{1}}" title="\frac{y_{2}-y_{1}}{x_{2}-x_{1}}" />. Penyelesaian permasalahan kemiringan dan persamaan linear ini diperkenalkan pertama kali oleh matematikawan Rene Descartes yang merupakan Bapak Geometri Analitik.</p>
+				<p>Dalam kehidupan sehari-hari, kemiringan dan persamaan garis lurus juga digunakan untuk mempermudah dan memberi keamanan dan kenyamanan. Contohnya pembuatan jalan yang menanjak dan menurun telah diperhitungkan dengan menggunakan kemiringan agar dalam penggunaannya aman dan nyaman. Tahukah kamu bahwa pembuatan Menara Pisa di Italia juga menggunakan konsep persamaan garis lurus dalam menentukan sudut kemiringannya?</p>
+			<div class="hero"></div>
+			</div>
+			<div id="pendahuluan" class="container">
+				<h3>Pendahuluan</h3>
+				<p>Persamaan garis lurus dan kemiringan merupakan materi matematika yang diajarkan di kelas VIII SMP dan sangat penting untuk dipelajari karena memiliki banyak peran dalam kehidupan sehari-hari. Sementara itu, matematika merupakan salah satu mata pelajaran yang diujikan secara nasional, maka seluruh kompetensi yang ada harus dikuasai siswa/i, sehingga hasil belajar yang diperoleh siswa/i mencapai Standar Ketuntasan Lulusan (SKL) yang telah ditetapkan. Oleh sebab itu, harus adanya upaya meminimalkan kesulitan-kesulitan belajar matematika yang dihadapi siswa/i.</p>
+				<p>Kesulitan belajar pada matematika khususnya materi persamaan garis lurus dan gradien yang dialami siswa/i dapat menghambat dalam mencapai standar kompetensi. Hasil penelitian, banyaknya siswa/i mengalami kesulitan tersebut, seperti menentukan gradien, menentukan persamaan garis lurus, menentukan titik potong pada persamaan garis lurus, membuat grafik persamaan, keliru dalam penggunaan rumus, saat berhadapan dengan soal tentang gradien, dan kesulitan lainnya. Hal ini terjadi karena siswa kurang memahami konsep dari persamaan garis lurus dan hanya menghafalkan rumus penggunaanya.</p> 
+				<p>Suatu cara yang bisa di gunakan dalam mengatasi kesulitan belajar pada materi persamaan garis lurus dan gradien dengan menghubungkan permasalahan dengan kehidupan sehari-hari sehingga memudahkan siswa/i untuk lebih memahami konsep materi ini. Penggunaan multimedia tentang materi persamaan garis lurus dapat mendukung dan memudahkan siswa/i dalam memahami materi ini. Selain itu, perbanyak menyelesaikan latihan soal dapat meningkatkan pemahaman siswa/i dalam menggunakan rumus yang tepat. Oleh karena itu, bahan ajar ini ditulis untuk membantu siswa/i dalam memahami dan menerapkan konsep materi persamaan garis lurus dan gradien.</p>	
+			</div>
+			<div id="garislurus" class="container">
+				<h3>Garis Lurus</h3>
+				<h4 id="pengertian">Pengertian</h4>
+				<p>Persamaan Garis Lurus atau PGL adalah persamaan linear yang mengandung satu atau dua variabel. Persamaan garis lurus dapat digambarkan dalam koordinat cartesius untuk mendapatkan grafik yang berbentuk garis lurus.</p>
+				<img src="image/Picture3.png">
+				<p>Garis lurus adalah kumpulan titik-titik yang letaknya sejajar. Dari Gambar diatas, terlihat bahwa titik-titik A, B, C, D, E, dan F memiliki letak yang sejajar dengan suatu garis lurus, misalkan garis k. Sebuah garis lurus dapat terbentuk dengan syarat sedikitnya ada dua titik pada bidang koordinat Cartesius.</p>
+				<h4 id="bentuk-umum">Bentuk Umum Persamaan Garis Lurus</h4>
+				<p>Rumus umum fungsi adalah 𝑦 = 𝑓(𝑥) = 𝑎𝑥 + 𝑏 dengan 𝑎, 𝑏 ∈ 𝑅 dan 𝑎 ≠ 0. Oleh karena itu, grafik fungsi linear 𝑦 = 𝑓(𝑥) = 𝑎𝑥 + 𝑏 merupakan garis lurus, sehingga disebut persamaan garis lurus atau 𝑦 = 𝑎𝑥 + 𝑏.</p>
+				<p>Bentuk umum persamaan garis lurus 
+				<p>𝑎𝑥 + 𝑏𝑦 + 𝑐 = 0 atau 𝑎𝑥 + 𝑏𝑦 = 𝑐	Persamaan dengan gradien m = -a/b</p>
+				<p>𝑦 = 𝑚𝑥 + 𝑐	Persamaan dengan gradien m</p>
+				<p>Keterangan: 
+				<p>𝑥 dan 𝑦 adalah variabel</p>
+				<p>𝑎, 𝑏, 𝑐, 𝑚 adalah konstanta</p>
+				<p>Contoh: </p>
+				<p>Jika terdapat persaman <img src="https://latex.codecogs.com/gif.latex?\frac{y}{2}&space;&plus;&space;\frac{4}{5}" title="x = \frac{y}{2} + \frac{4}{5}" /> apakah dapat dikatakan suatu persamaan garis lurus?
+				<p>Penyelesaian:</p>
+				<p><img src="https://latex.codecogs.com/gif.latex?\frac{y}{2}&space;&plus;&space;\frac{4}{5}" title="x = \frac{y}{2} + \frac{4}{5}" /></p>
+				<p>10𝑥 = 5𝑦 + 8</p>
+				<p>5𝑦 = 10𝑥 – 8</p>
+				<p><img src="https://latex.codecogs.com/gif.latex?\frac{5y}{5}&space;=&space;\frac{10x}{5}&space;-&space;\frac{8}{5}" title="\frac{5y}{5} = \frac{10x}{5} - \frac{8}{5}" /></p>
+				<p><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;2x&space;-&space;\frac{8}{5}" title="y = 2x - \frac{8}{5}" /></p>
+				<p>Bentuk tersebut merupakan bentuk 𝑦 = 𝑚𝑥 + 𝑐 dengan 𝑚 = 2 dan c= -8/5. Jadi, <img src="https://latex.codecogs.com/gif.latex?\frac{y}{2}&space;&plus;&space;\frac{4}{5}" title="x = \frac{y}{2} + \frac{4}{5}" /> merupakan persamaan garis lurus.</p>
+				<h4 id="menggambar">Menggambar Persamaan Garis Lurus Pada Koordinat Cartesius</h4>
+				<p>Garis lurus adalah kumpulan titik-titik yang letaknya sejajar. Sebuah garis lurus dapat terbentuk dengan syarat sedikitnya ada dua titik pada bidang koordinat cartesius. Langkah-langkah dalam membuat gambar garis lurus di koordinat cartesius sebagai berikut:</p>
+				<p>   •	Tentukan dua pasangan titik yang memenuhi persamaan garis tersebut dengan membuat tabel untuk mencari koordinatnya.</p>
+			<p>   •	Gambar dua titik tersebut pada bidang cartesius.</p>
+			<p>   •	Hubungkan dua titik tersebut, sehingga membentuk garis lurus, yakni grafik persamaan yang dicari.</p>
+			<p>Contoh:</p>
+			<p>Gambarlah grafik persamaan garis lurus y = -2x + 4 pada bidang cartesius, jika x, y variabel pada himpunan bilangan real.</p>
+			<p>Penyelesaian:</p>
+			<p>Garis akan memotong sumbu X jika y = 0. Maka diperoleh</p>
+			<p>𝑦 = -2𝑥 + 4</p>
+			<p>0 = -2𝑥 + 4</p>
+			<p>-2𝑥 = - 4</p>
+			<p>𝑥 = 2</p>
+			<p>Garis akan memotong sumbu Y jika x = 0. Maka diperoleh</p>
+			<p>y = -2x + 4</p>
+			<p>y = 0 + 4</p>
+			<p>y = 4</p>
+			<img src="image/picture2.png" width="560" height="315">
+			<br>
+			<p>Untuk lebih jelasnya, dapat kalian lihat dari video berikut</p>
+			<br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/YXqTWFEa1A4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			</div>
+			<div id="gradien" class="container">
+				<h3>Gradien Garis Lurus</h3>
+				<h4 id="pengertian-G">Pengertian Gradien</h4>
+				<p>Perhatikan orang yang ingin menaiki tangga. Dapatkah kalian menentukan nilai kemiringannya?</p>
+				<img class="float-kiri" src="image/Picture4.png">
+				<br>
+				<br>
+				<p>Jika tangga dianggap sebagai garis lurus maka nilai kemiringan tangga dapat ditentukan dengan cara membandingkan tinggi tembok yang dapat dicapai ujung tangga dengan jarak kaki tangga dari tembok. Nilai kemiringan tangga tersebut disebut gradien. Gradien ialah perbandingan antara jarak tegak terhadap jarak mendatar (Nuharini & Wahyuni, 2008).</p>
+				<br>
+				<br>
+				<br>
+				<p>Gradien garis pada sistem koordinat Cartesius memiki sifat-sifat sebagai berikut:</p>
+				<p>a)	Panjang atau pendeknya garis tidak mempengaruhi gradien. </p>
+				<p>b)	Menentukan sebagian ruas garis dapat menentukan gradien. </p>
+				<p>c)	Garis yang gradiennya positif akan miring ke kanan. </p>
+				<p>d)	Garis yang gradiennya negatif akan miring ke kiri. </p>
+				<p>e)	Gradien garis yang dilalui titik (0,0) dan titik (x, y) mempunyai gradien (Aisyah et al., 2021, hal. 7)</p>
+				<h4 id="melaluititik">Gradien Garis Yang Melalui Titik Pusat O (0, 0) Dan Titik (x, y)</h4>
+				<p>Gradien suatu garis adalah bilangan yang menyatakan kecondongan suatu garis yang merupakan perbandingan antara komponen y dan komponen x. Perhatikan Gambar 6 di bawah ini, tampak garis y=1/2 x dengan titik O(0, 0), A(2, 1), dan B(6, 3) terletak pada garis tersebut. Bagaimanakah perbandingan antara komponen y dan komponen x dari masing-masing ruas garis pada y=1/2 x tersebut?</p>
+				<img class="float-kiri" src="https://4.bp.blogspot.com/-RtJZd_VkH24/U2Td97q3RFI/AAAAAAAAJ-w/4FqG1kiudKo/s1600/gradien+0.jpg" height="300px">
+				<p>Perhatikan ruas garis OA' pada segitiga OAA'</p>
+			<p><img src="https://latex.codecogs.com/gif.latex?\frac{y_{A}}{x_{A}}=\frac{1}{2}" title="\frac{y_{A}}{x_{A}}=\frac{1}{2}" /></p> 
+			<p>Perhatikan ruas garis OB' pada segitiga OBB'</p>
+			<p><img src="https://latex.codecogs.com/gif.latex?\frac{y_{B}}{x_{B}}=\frac{1}{2}" title="\frac{y_{B}}{x_{B}}=\frac{1}{2}" /></p>
+			<p>Perhatikan juga ruas garis AB pada segitiga ABC</p>
+			<p><img src="https://latex.codecogs.com/gif.latex?\frac{y_{AB}}{x_{AB}}=\frac{1}{2}" title="\frac{y_{AB}}{x_{AB}}=\frac{1}{2}" /></p>
+			<br>
+			<p>Dari uraian tersebut, perbandingan komponen y dan komponen x pada masing-masing ruas garis menunjukan hasil bilangan yang sama. Jadi, gradien dari garis y = 1/2 x adalah 1/2. Dapat disimpulkan, koefisien x pada persamaan garis y=1/2 x adalah gradien.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/tx4SOIAsQ4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
+			<br>
+			<br>
+			<h4 id="duatitik">Gradien Garis yang Melalui Dua Titik</h4>
+			<img class="float-kiri" src="image/Picture7.png">
+			<p>Gambar tersebut memiliki sebuah garis lurus pada bidang koordinat yang melalui titik A dan B. Untuk mencari gradien garis tersebut, kalian dapat menentukan nilai AB pada segitiga ACB (titik C perpotongan antara A dan B) dengan menentukan perbandingan ordinat (BC) dan absis(AC).</p>
+			<p>Maka, gradien garis yang melalui dua titik adalah <img src="https://latex.codecogs.com/gif.latex?m&space;=&space;\frac{y_{2}-y_{1}}{x_{2}-x_{1}}" title="m = \frac{y_{2}-y_{1}}{x_{2}-x_{1}}" />. Untuk lebih jelasnya, kalian dapat melihat video di bawah ini.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/zoDpEHo7uIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
+			<br>
+			<br>
+			<h4 id="sejajar">Gradien Garis-Garis Yang Saling Sejajar</h4>
+			<img class="float-kiri" src="http://3.bp.blogspot.com/-xzh2toyR0_c/U2XtOsJ9q6I/AAAAAAAAJ_o/x9AB_rMkde0/s1600/garis+saling+sejajar.png">
+			<p>Gradien garis yang sejajar di antaranya adalah gradien garis yang sejajar dengan sumbu-x, gradien garis yang sejajar dengan sumbu-y, dan gradien dua garis yang sejajar. Gradien garis sejajar memiliki sifat-sifat, yaitu nilai dari gradien akan sama untuk garis-garis yang sejajar dan jika diketahui garis-garis saling sejajar, maka pasti gradiennya sama.</p>
+			<p>Selain itu, jika garis sejajar dengan sumbu- x maka nilai gradiennya adalah nol, jika garis sejajar dengan sumbu-y maka garis tersebut tidak memiliki gradien, dan jika garis y<sub>1</sub> = m<sub>1</sub>x + c sejajar dengan garis y<sub>2</sub> = m<sub>2</sub>x + c maka gradien kedua garis tersebut sama, m<sub>1</sub> = m<sub>2</sub>.</p>
+			<br>
+			<div class="clear"></div>
+			<h4 id="tegaklurus">Gradien Garis-Garis Yang Saling Tegak Lurus</h4>
+			<img class="float-kiri" src="http://3.bp.blogspot.com/-1HBGH4irjSc/U2Ybci3gOSI/AAAAAAAAKAA/EskWiezlL08/s1600/garis+saling+tegak+lurus+0.png">
+			<p>Tegak lurus adalah hubungan antara dua garis lurus yang bertemu di sebuah sudut tegak. Sebuah garis dikatakan tegak lurus terhadap garis lainnya jika kedua garis tersebut berpotongan membentuk sudut tegak atau 90°.</p>
+			<p>Hasil kali kedua gradien yang saling tegak lurus adalah m<sub>AB</sub> × m<sub>QP</sub> = 1 × (-1) = -1. Jika dua buah garis saling tegak lurus maka hasil kali gradien kedua garis tersebut adalah –1.</p>
+			</div>
+			<div id="persamaan" class="container">
+			<div class="clear"></div>
+				<h3>Menentukan Persamaan Garis</h3>
+				<h4 id="persamaan1">Persamaan Garis dengan Gradien m yang Melalui Sebuah Titik</h4>
+				<p>Misalkan suatu garis mempunyai gradien m dan melalui sebuah titik (x1, y1). Bentuk persamaan garis tersebut adalah y = mx + c. Untuk menentukan persamaan garis tersebut perhatikan langkah- langkah berikut. </p>
+				<p>(a) Substitusi titik (x1, y1) ke persamaan y = mx + c.</p>
+				<p>y = mx + c</p>
+				<p>y<sub>1</sub> = mx<sub>1</sub> + c</p>
+				<p>c = y<sub>1</sub> – mx<sub>1</sub></p>
+				<p>(b) Substitusi nilai c ke persamaan y = mx + c</p>
+				<p>y = mx + c</p>
+				<p>y = mx + y<sub>1</sub> – mx<sub>1</sub></p>
+				<p>y – y<sub>1</sub> = mx – mx<sub>1</sub></p>
+				<p>y – y<sub>1</sub> = m(x – x<sub>1</sub>)</p>
+				<p>Persamaan garis yang melalui titik (x<sub>1</sub>, y<sub>1</sub>) dan bergradien m adalah y – y<sub>1</sub> = m(x – x<sub>1</sub>).</p>
+				<p>Contoh:</p>
+				<p>Tentukan persamaan garis yang melalui titik P(2, 6) dan memiliki gradien -2.</p>
+				<p>Penyelesaian:</p>
+				<p>y – y<sub>1</sub> = m(x – x<sub>1</sub>).</p>
+				<p>y – 6 = 2(x – 2)</p>
+				<p>y = 2x – 4 + 6</p>
+				<p>y = 2x + 2 atau 2x – y + 2 = 0</p>
+				<h4 id="persamaan2">Persamaan Garis yang Melalui Dua Titik</h4>
+				<p>Pada bagian sebelumnya, kamu telah mempelajari menentukan persamaan garis yang melalui satu titik dan gradien yang diketahui. Selanjutnya, pada bagian ini kamu akan mempelajari cara menentukan persamaan garis yang melalui dua titik. Perhatikan uraian berikut:</p>
+				<p>	y - y<sub>1</sub> = m(x - x<sub>1</sub>) adalah rumus umum persamaan garis dari gradien dan titik koordinat</p>
+				<p><img src="https://latex.codecogs.com/gif.latex?m&space;=&space;\frac{y_{2}-y_{1}}{x_{2}-x_{1}}" title="m = \frac{y_{2}-y_{1}}{x_{2}-x_{1}}" /> adalah rumus gradien yang melalui dua titik</p>
+				<p>Dari kedua rumus tersebut, dapat diuraikan sebagai berikut</p>
+				<p>y - y<sub>1</sub>=m(x - x<sub>1</sub>)</p>
+				<p>y - y<sub>1</sub>=<img src="https://latex.codecogs.com/gif.latex?\frac{y_{2}-y_{1}}{x_{2}-x_{1}}" title="\frac{y_{2}-y_{1}}{x_{2}-x_{1}}" />(x - x<sub>1</sub>)</p>
+				<img src="https://latex.codecogs.com/gif.latex?y-y_{1}&space;=&space;\frac{(y_{2}-y_{1})(x-x_{1})}{x_{2}-x_{1}}" title="y-y_{1} = \frac{(y_{2}-y_{1})(x-x_{1})}{x_{2}-x_{1}}" />
+				<p><img src="https://latex.codecogs.com/gif.latex?\frac{(y-y_{1})}{(y_{2}-y_{1})}&space;=&space;\frac{(y_{2}-y_{1})(x-x_{1})}{(y_{2}-y_{1})(x_{2}-x_{1})}" title="\frac{(y-y_{1})}{(y_{2}-y_{1})} = \frac{(y_{2}-y_{1})(x-x_{1})}{(y_{2}-y_{1})(x_{2}-x_{1})}" /></p>
+				<p><img src="https://latex.codecogs.com/gif.latex?\frac{(y-y_{1})}{(y_{2}-y_{1})}&space;=&space;\frac{(x-x_{1})}{(x_{2}-x_{1})}" title="\frac{(y-y_{1})}{(y_{2}-y_{1})} = \frac{(x-x_{1})}{(x_{2}-x_{1})}" /></p>
+				<p>Jadi, rumus untuk menentukan persamaan garis yang melalui dua titik adalah <img src="https://latex.codecogs.com/gif.latex?\frac{(y-y_{1})}{(y_{2}-y_{1})}&space;=&space;\frac{(x-x_{1})}{(x_{2}-x_{1})}" title="\frac{(y-y_{1})}{(y_{2}-y_{1})} = \frac{(x-x_{1})}{(x_{2}-x_{1})}" /></p>
+				<br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/_s6z5CI5ZiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<br>
+				<br>
+				<h4 id="persamaan4">Persamaan Garis yang Melalui Titik (x1, y1) dan Sejajar dengan Garis y = mx + c</h4>
+				<img class="float-kiri" src="image/Picture9.png">
+				<br>
+				<p>Perhatikan Gambar di samping. Gambar tersebut terlihat menunjukan garis k dengan persamaan y = mx + c bergradien m dan garis l sejajar dengan garis k. Garis k // l maka m<sub>k</sub>= m<sub>l</sub> = m</p>
+				<p>Persamaan garis yang melalui titik (x<sub>1</sub>, y<sub>1</sub>) dan sejajar garis y = mx + c adalah y - y<sub>1</sub> = m(x - x<sub>1</sub>).</p>
+				<br>
+				<br>
+				<div class="clear"></div>
+				<h4 id="persamaan5">Persamaan Garis yang Melalui Titik (x1, y1) dan Tegak Lurus dengan Garis y = mx + c</h4>
+				<img class="float-kiri" src="image/Picture10.png">
+				<br>
+				<p>Pada bagian sebelumnya, kita telah mempelajari cara menentukan persamaan garis yang melalui titik dan sejajar dengan garis y = mx + c. Selanjutnya, kita akan mempelajari cara menentukan persamaan garis yang melalui titik dan tegak lurus dengan garis y = mx + c. Perhatikan gambar di samping</p>
+				<p>Garis k ⊥ l, sehingga m<sub>k</sub> × m<sub>l</sub> = -1 atau m<sub>k</sub> = -1/m<sub>l</sub> = -1/m.</p>
+				<p>Persamaan garis yang melalui titik (x1, y1) dan tegak lurus dengan garis y = mx + c adalah y-y<sub>1</sub> = -1/m(x - x<sub>1</sub>).</p>
+				<br>
+				<br>
+				<div class="clear"></div>
+				<h4 id="persamaan3">Jarak Titik ke Garis</h4>
+				<p>Jarak merupakan salah satu permasalahan matematika yang sering dijumpai di lingkungan sekitar. Jarak dapat diukur diantara dua objek, seperti rumah dengan sekolah, rumah dengan supermarket, dan objek lainnya. Pada bagian ini, kita akan membahas mengenai jarak antara dua objek yang berupa titik dan garis lurus. Jarak dua titik dan titik ke garis memiliki kaitan dengan persamaan garis lurus. Garis yang digunakan adalah dalam bentuk ax + by + c = 0.</p>
+				<p>•	Jarak titik A(x1, y1) dengan titik B(x2, y2) adalah <img src="https://latex.codecogs.com/gif.latex?d&space;=&space;\sqrt{(x_{2}-x_{1})^{2}&space;&plus;&space;(y_{2}-y_{1})^{2}}" title="d = \sqrt{(x_{2}-x_{1})^{2} + (y_{2}-y_{1})^{2}}" /></p>
+				<br>
+				<img class="float-kiri" src="image/Picture8.png">
+				<p>•	Jarak titik A(x1, y1) dengan garis ax + by + c = 0</p>
+				<p>Jarak dua objek adalah panjang lintasan terpendek yang menghubungkan kedua objek tersebut. Ruas garis yang tegak lurus dengan garis ax + by + c = 0 dan memiliki ujung di titik A dan ujung satunya di garis tersebut merupakan lintasan terpendek yang menghubungkan titik dengan garis, maka Panjang dari ruas tersebut yaitu d (Jarak titik A terhadap garis ax + by + c = 0). Jadi, menentukan jarak antara titik yang memiliki koordinat (x1, y1) dengan garis lurus yang persamaanya ax + by + c = 0 dengan rumus:</p>
+				<p><img src="https://latex.codecogs.com/gif.latex?d&space;=&space;\left&space;|&space;\frac{ax_{1}&plus;by_{1}&plus;c}{\sqrt{a^{2}&plus;b^{2}}}&space;\right&space;|" title="d = \left | \frac{ax_{1}+by_{1}+c}{\sqrt{a^{2}+b^{2}}} \right |" /></p>
+				<div class="clear"></div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/P323xDgjo9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div id="aplikasi" class="container">
+				<h3>APPLET GEOGEBRA MATERI PERSAMAAN GARIS LURUS</h3>
+				<p>Geogebra adalah software yang memudahkan kita dalam menghitung atau menggambar hal yang berkaitan dengan geometri dan aljabar. Geogebra ini dapat kita gunakan dalam menentukan persamaan garis lurus dan menggambar grafiknya. Berikut aplikasi geogebra untuk memudahkan kita dalam menentukan gradien dan persamaan garis.</p>
+				<br>
+				<iframe scrolling="no" title="Applet Geogebra Persamaan Garis Lurus" src="https://www.geogebra.org/material/iframe/id/dchyp2ca/width/1336/height/573/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px" style="border:1px;"> </iframe>
+			</div>
+			<div id="latihan" class="container">
+				<h3>LATIHAN</h3>
+				<p>1. Tentukan titik potong dengan sumbu X, titik potong dengan sumbu Y dari tiap-tiap garis dengan persamaan berikut.</p>
+				<p> • y = 4x - 1</p>
+				<p> • 2x - 3y = 12</p>
+				<p> • 10x + 25y = 100</p>
+				<br>
+				<p>2. Gambarlah grafik persamaan garis lurus y=-3x-5 pada bidang Cartesius, jika x, y variabel pada himpunan bilangan real.</p>
+				<br>
+				<p>3. Persamaan c = 6f + 90 menjelaskan hubungan antara jumlah lemak f dalam gram dan jumlah kalori c dalam beberapa jenis makanan.</p>
+				<p> • Carilah titik potong garis tersebut dengan sumbu c!</p>
+				<p> • Gambarlah persamaan garis tersebut.</p>
+				<p> • Suatu jenis makanan mengandung 20 gr. Berapa jumlah kalori makanan tersebut?</p>
+				<br>
+				<p>4. Tentukanlah gradien (m) dan konstanta (c) dari persamaan garis berikut. </p>
+				<p>• x + 2y + 3 = 0 </p>
+				<p>• 5x – 4y – 3 = 0  </p>
+				<br>
+				<p>5. Diketahui sebuah garis melalui titik A(3, 0) dan B(0, 2). Suatu garis lain melalui titik O(0, 0) dan C(3, 3).</p>
+				<p>a. Dengan menentukan gradien masing-masing garis, bagaimanakah kedudukan dua garis tersebut?</p>
+				<p>b. Tentukan persamaan garis yang melalui titik O dan C?</p>
+				<br>
+				<p>6. Diketahui sebuah garis lurus memiliki persamaan y = 2x + 5. Tentukan apakah persamaan garis tersebut membentuk garis yang sejajar atau saling tegak lurus dengan y = 2x – 8 dan 4x – 2y + 6 = 0</p>
+				<br>
+				<p>7. Tentukan persamaan garis yang melalui titik-titik koordinat berikut.</p>
+				<p>a. A (3, 3) dan B (2, 1)</p>
+				<p>b. C (–1, 4) dan D (1, 3)</p> 
+				<p>c. E (6, 10) dan F (–5, 2)</p>
+				<br>
+				<p>8. Tentukan persamaan garis yang melalui:</p>
+				<p>a. Titik K(–2, –4) dan sejajar dengan garis 3x + y – 5 = 0,</p>
+				<p>b. Titik R(1, –3) dan sejajar dengan garis yang melalui titik A(4, 1) dan B(–1, 2),</p>
+				<p>c. Titik L(5, 1) dan tegak lurus dengan garis x –2y + 3 = 0. </p>
+				<br>
+				<p>9. Tentukan jarak titik A(2,1) ke titik B(−3,4)!</p>
+				<br>
+				<p>10. Tentukan jarak titik yang memiliki koordinat (-4, 6) dengan garis yang memiliki persamaan 2x – 5y – 10 = 0</p>
+				<br>
+				<p>11. Suatu garis yang melalui titik (0,0) membagi persegi panjang dengan titik-titik sudut (1,12), (6,0), (1,0), dan (6,12) menjadi dua bagian yang sama luas. Tentukan gradien garis dan persamaan garis tersebut!</p>
+				<br>
+				<p>12. Sebuah mobil bergerak dengan kecepatan tetap 15 km/jam. Setelah 3 jam, mobil tersebut menempuh jarak 45 km. Berapa lama waktu yang diperlukan mobil tersebut untuk menempuh jarak 90 km?</p>
+				<br>
+				<p>13. Di salah satu kota H di pulau Kalimantan, pertambahan penduduk setiap tahun selalu tetap. Pada tahun 2009 dan tahun 2015, jumlah penduduk dikota itu berturut-turut 700.000 orang dan 1000.000 orang. Berapa jumlah penduduk tahun 2020? </p>
+				<br>
+				<p>14. Jaidah memiliki mainan mobil-mobilan yang digerakkan dengan remot kontrol. Mobil-mobilan tersebut berada 5 cm dari tepi ruangan dan bergerak pada lantai ruangan dengan kecepatan tetap yaitu 12 cm untuk tiap detiknya. Rumuskan jarak mobil-mobilan dari tepi ruangan setelah t detik, jika jarak mobil-mobilan dari tepi ruangan adalah s!</p>
+				<br>
+				<p>15. Masya sedang menaiki tangga. Jika tinggi dinding yang dapat dicapai ujung tangga sebagai AB dan jarak kaki tangga ke dinding (alas) sebagai BC dimana AB = 8 m dan BC = 5 m, berapakah kemiringan tangga sebagai AC itu?</p>
+			</div>
+			<div class="container">
+				<h3>Profil</h3>
+				<h4>SALMA ROHADATUL AISY</h4>
+				<br>
+				<img src="image/Picture5.jpg" width="230px" class="float-kiri">
+				<p>Salma Rohadatul Aisy merupakan seorang mahasiswi yang lahir di Cilegon pada 26 Agustus 2001. Saat ini ia berumur 20 tahun dan sedang mengampu semester 2 di jurusan pendidikan matematika, Fakultas Keguruan dan Ilmu Pendidikan, Universitas Sultan Ageng Tirtayasa. Hobby yang ia sukai adalah berenang, bersepeda, dan membaca. Ia memliki kebiasaan yang unik saat sedang menulis dan membaca, yaitu bibirnya yang ikut bergerak saat menulis dan membaca. </p> 
+				<p>Sebelumnya, ia tidak memiliki kemampuan dalam pengembangan multimedia sehingga website ini merupakan website pertama kali yang dibuat olehnya untuk memenuhi tugas mata kuliah pengembangan multimedia matematika.</p>
+			<div class="clear"></div>
+				<br>
+				<br>
+				<h4>AAN HENDRAYANA</h4>
+				<p>Aan Hendrayana merupakan seorang dosen di Jurusan Pendidikan Matematika, Fakultas Keguruan dan Ilmu Pendidikan, Universitas Sultan Ageng Tirtayasa. Beliau merupakan dosen pengampu mata kuliah pengembangan multimedia matematika. </p>
+			</div>
+		</section>
+
+			<footer>
+				<div class="container">
+					<small>Copyright &copy; 2022 - Salma Rohadatul Aisy</small>
+				</div>
+			</footer>
+
+		<script>
+			
+			let arrow = document.querySelectorAll(".arrow");	
+			for (var i = 0; i < arrow.length; i++) {
+				arrow[i].addEventListener("click", (e)=>{
+			let arrowParent = e.target.parentElement.parentElement;
+			arrowParent.classList.toggle("showMenu"); 
+				});
+			}
+
+			let sidebar = document.querySelector(".sidebar");
+			let sidebarBtn = document.querySelector(".bx-menu");
+			console.log(sidebarBtn);
+			sidebarBtn.addEventListener("click", ()=>{
+				sidebar.classList.toggle("close");
+			});
+		</script>
+</body>
+</html>
